@@ -78,5 +78,5 @@ public void Time(){
     	
     	driver.findElementByXPath("//android.widget.CheckBox[contains(@text,'Ë÷Äá£¨SONY£©')]").click();
     	
-    	driver.swipe(248, 832, 248, 1974, 1000);
+    	driver.swipe(248, 832, 248, 1974, 2000);
     	
