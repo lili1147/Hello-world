@@ -61,22 +61,5 @@ public void Time(){
     	 
     	//设置筛选条件
  
-    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'筛选')]").click();
-    	Time();
     	
-    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'京东服务')]").click();
-    	
-//    	driver.findElementByAndroidUIAutomator("new UiSelector().resourseId(\"com.jd.lib.search:id/product_fiter_3_address\")").click();
-    	Time();
-    	driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).getChildByText(new UiSelector().className(\"android.widget.TextView\"),\"江苏\")").click();
-    	Time();
-    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'南京市')]").click();
-    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'鼓楼区')]").click();
-    	Time();
-    	driver.findElementByXPath("//android.widget.CheckBox[contains(@text,'仅看有货')]").click();
-    	driver.findElementByXPath("//android.widget.CheckBox[contains(@text,'仅看有货')]").click();
-    	
-    	driver.findElementByXPath("//android.widget.CheckBox[contains(@text,'索尼（SONY）')]").click();
-    	
-    	driver.swipe(248, 832, 248, 1974, 2000);
     	
