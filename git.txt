@@ -1,0 +1,3 @@
+git -A 
+git commit -a -m "add new file"
+git push
