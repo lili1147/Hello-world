@@ -1,0 +1,82 @@
+public void Time(){
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public void test(AppiumDriver driver) {
+		    	try {
+			Thread.sleep(6000);		//等待6s，待应用完全启动
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS); //设置尝试定位控件的最长时间为8s,也就是最多尝试8s
+      /*
+    	 * 余下的测试逻辑请按照题目要求进行编写
+    	 */
+    	driver.findElement(By.id("btb")).click();
+    	Time();
+//    	driver.findElementByAccessibilityId("分类").click();
+//    	
+//    	driver.findElementByAccessibilityId("发现").click();
+//    	driver.findElementByAccessibilityId("购物车").click();
+//    	driver.findElementByAccessibilityId("我的").click();
+//    	
+//    	driver.findElementByAccessibilityId("发现").click();
+//    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'精选')]").click();
+//    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'搭配')]").click();
+//    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'测评')]").click();
+//    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'视频')]").click();
+//    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'西门子')]").click();
+//    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'直播')]").click();
+    	
+    	driver.findElementByAccessibilityId("首页").click();
+    	driver.findElement(By.id("rb")).click();
+    	driver.findElementByClassName("android.widget.EditText").sendKeys("耳机");
+    	driver.findElement(By.id("avs")).click();
+//    	try {
+//			Thread.sleep(4000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//    	driver.findElement(By.id("iv_search_recommend_banner")).click();    	
+    	
+    	//driver.findElement(By.id("fg")).click();
+    	Time();
+    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'综合')]").click();
+    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'新品优先')]").click(); 
+    	Time();
+    	
+    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'销量')]").click();
+    	Time();
+    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'价格')]").click();
+    	Time();
+    	
+    	driver.findElementByAccessibilityId("浏览模式切换").click();
+    	Time();
+    	 
+    	//设置筛选条件
+ 
+    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'筛选')]").click();
+    	Time();
+    	
+    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'京东服务')]").click();
+    	
+//    	driver.findElementByAndroidUIAutomator("new UiSelector().resourseId(\"com.jd.lib.search:id/product_fiter_3_address\")").click();
+    	Time();
+    	driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).getChildByText(new UiSelector().className(\"android.widget.TextView\"),\"江苏\")").click();
+    	Time();
+    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'南京市')]").click();
+    	driver.findElementByXPath("//android.widget.TextView[contains(@text,'鼓楼区')]").click();
+    	Time();
+    	driver.findElementByXPath("//android.widget.CheckBox[contains(@text,'仅看有货')]").click();
+    	driver.findElementByXPath("//android.widget.CheckBox[contains(@text,'仅看有货')]").click();
+    	
+    	driver.findElementByXPath("//android.widget.CheckBox[contains(@text,'索尼（SONY）')]").click();
+    	
+    	driver.swipe(248, 832, 248, 1974, 1000);
+    	
